@@ -187,7 +187,7 @@ function App() {
       </div>
 
       <footer className="app-footer">
-        <p>FRD Generation System © 2024 | All rights reserved</p>
+        <p>FRD Generation System © 2026 | All rights reserved</p>
         <p>Version 1.0.0 | API Status: Connected</p>
       </footer>
     </div>

@@ -139,8 +139,10 @@ def generate_frd():
         logger.info("Generating FRD sections...")
         frd_sections = rag_agent.generate_frd_sections(requirement, similar_docs)
         
-        if 'error' in frd_sections:
-            return jsonify({'error': 'Failed to generate FRD sections'}), 500
+        # If an error occurred in generator, surface the actual message for easier debugging
+        if isinstance(frd_sections, dict) and frd_sections.get('error'):
+            logger.error(f"FRD generation error: {frd_sections.get('error')}")
+            return jsonify({'error': frd_sections.get('error')}), 500
         
         # Generate DOCX
         logger.info("Generating DOCX document...")

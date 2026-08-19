@@ -390,3 +390,8 @@ For issues, questions, or suggestions, please create an issue in the repository.
 
 **Last Updated**: 2024
 **Version**: 1.0.0
+
+Target uri-https://bl-prod02-opai-productchangeanalyzer-01.openai.azure.com/openai/responses?api-version=2025-04-01-preview
+key-
+
+ 
